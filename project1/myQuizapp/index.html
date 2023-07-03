@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test simulator</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="alert-container">
+            <div class="quit-alert">
+                <p class="alert-text">Do you want to leave the game?</p>
+    
+                <div class="buttons">
+                    <button>go back</button>
+                    <button>quit</button>
+                </div>
+    
+            </div>
+        </div>
+        <div class="question-container">
+            <div class="question-title">
+                <h2 class="question-counter">Question 1/3</h2>
+                <div class="points"></div>
+            </div>
+            <div class="question-main">
+                <div class="qst 1" name="qst-1">
+                    <div class="question-body">
+                        Noun is a name of a person?
+                    </div>
+                    <div class="answers">
+                        <div class="option-hldr">
+                            <input type="radio" id="a" name="radio">
+                            <label for="a" name="option" data-number="1">true</label>
+                        </div>
+                        <div class="option-hldr">
+                            <input type="radio" id="b" name="radio">
+                            <label for="b" name="option" data-number="2">true</label>
+                        </div>
+                        <div class="option-hldr">
+                            <input type="radio" id="c" name="radio">
+                            <label for="c" name="option" data-number="3">true</label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="quit">quit</button>
+                <button id="next">next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

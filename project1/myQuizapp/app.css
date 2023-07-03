@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+.main-container {
+    position: relative;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.active {
+    display: flex;
+}
+
+.alert-container {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #33333350;
+}
+
+.quit-alert {
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #ffffff79;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* width: auto; */
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 0 1rem -0.4rem rgb(172, 172, 172);
+    padding: 1rem 2rem;
+    height: 10rem;
+    z-index: 2;
+}
+
+.alert-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(110, 110, 110);
+}
+
+.quit-alert::after {
+    
+}
+
+
+
+
+/* Question section */
+
+.question-container {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    padding: 40px;
+    font-size: 1.5rem;
+    gap: 10px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 2rem 0.004rem rgb(126, 126, 126);
+}
+
+.question-title{
+    display: flex;
+    color: #226fff;
+}
+
+.question-body{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* input */
+input{
+    border: none;
+}
+
+.option-hldr {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.option-hldr label {
+    display: flex;
+    width: 100%;
+    padding: .5rem;
+    background-color: #fff;
+    margin-left: .4rem;
+    border-radius: .4rem 0 0;
+}
+
+/* buttons */
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6.4rem;
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 
+    0 0.1rem .3rem .02rem rgb(155, 155, 155);
+    transition: .2s ease;
+    font-size: 1.43rem;
+    font-weight: 600;
+    
+}
+
+button:hover {
+    box-shadow: 0 0.1rem .4rem .04rem #4b8aff;
+}
+
+
+
